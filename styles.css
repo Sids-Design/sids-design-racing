@@ -40,3 +40,16 @@
 
 /* V2.7 – Original-Kundenprojekte */
 .portfolio-item h3{overflow-wrap:anywhere}.portfolio-item .garage-gallery{margin-top:18px}.gallery-stage{background:#0b0d10}.gallery-slide img{object-fit:contain!important;object-position:center!important;transform:none!important}.portfolio-team{color:#ff831f;font-weight:800;letter-spacing:1.2px}@media(max-width:570px){.gallery-slide img{object-fit:contain!important;transform:none!important}.portfolio-item{min-width:0}}
+
+/* V3.0 Team → Fahrzeug → Galerie */
+.team-intro{padding:0 22px;color:#a7a7aa;font-size:13px}.vehicle-select{padding:14px 22px 20px}.vehicle-button{width:100%;background:#101113;border:1px solid #ff831f;color:#ff831f;padding:15px 16px;text-align:left;font-weight:800;letter-spacing:1px;cursor:pointer}.vehicle-button:hover,.vehicle-button[aria-expanded="true"]{background:#ff831f;color:#111}.vehicle-panel[hidden]{display:none!important}.vehicle-panel .garage-gallery{margin-top:0}.vehicle-panel .gallery-controls button{background:#101113;color:#ff831f;border:1px solid #ff831f;border-radius:4px}.vehicle-panel .gallery-controls button:hover{background:#ff831f;color:#101113}@media(max-width:570px){.vehicle-select{padding:12px 16px 16px}.team-intro{padding:0 16px}.vehicle-button{font-size:12px}}
+
+/* V3.1: Logo-first Team Showcase */
+.team-open{display:block;width:100%;padding:0;border:1px solid rgba(255,131,31,.28);background:#0b0c10;color:#fff;cursor:pointer;text-align:left;margin:20px 0 14px;transition:border-color .2s,transform .2s}
+.team-open:hover,.team-open:focus-visible{border-color:#ff831f;transform:translateY(-2px)}
+.team-logo-frame{height:250px;display:flex;align-items:center;justify-content:center;padding:30px;background:radial-gradient(ellipse at center,#23242a 0%,#0a0b0e 75%)}
+.team-logo-frame img{display:block;max-height:100%;max-width:100%;width:auto;height:auto;object-fit:contain}
+.team-open-label{display:flex;justify-content:space-between;align-items:center;padding:15px 20px;border-top:1px solid #292a2e;font-weight:800;letter-spacing:.14em;color:#ff831f}
+.team-open[aria-expanded="true"] .team-open-label{background:#22160e}
+.vehicle-select[hidden],.vehicle-panel[hidden]{display:none!important}
+@media(max-width:570px){.team-logo-frame{height:200px;padding:24px}.team-open{margin-top:15px}}

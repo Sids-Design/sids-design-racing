@@ -61,3 +61,30 @@ for (const gallery of document.querySelectorAll('[data-gallery]')) {
   }, {passive:true});
   show(0);
 }
+
+// V3.0: Teams als auswählbare Fahrzeugkacheln
+document.querySelectorAll('.vehicle-button').forEach(button => {
+  button.addEventListener('click', () => {
+    const panel = button.closest('.portfolio-item').querySelector('.vehicle-panel');
+    const expanded = button.getAttribute('aria-expanded') === 'true';
+    button.setAttribute('aria-expanded', String(!expanded));
+    panel.hidden = expanded;
+  });
+});
+
+// V3.1: Zuerst das originale Teamlogo, danach Fahrzeugauswahl.
+document.querySelectorAll('.team-open').forEach(button => {
+  button.addEventListener('click', () => {
+    const card = button.closest('.portfolio-item');
+    const selection = card.querySelector('.vehicle-select');
+    const expanded = button.getAttribute('aria-expanded') === 'true';
+    button.setAttribute('aria-expanded', String(!expanded));
+    selection.hidden = expanded;
+    if (expanded) {
+      const vehicleButton = card.querySelector('.vehicle-button');
+      const panel = card.querySelector('.vehicle-panel');
+      vehicleButton.setAttribute('aria-expanded', 'false');
+      panel.hidden = true;
+    }
+  });
+});
