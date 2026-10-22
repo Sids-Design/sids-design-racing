@@ -1,13 +1,1 @@
-const menuButton = document.querySelector('.menu-toggle');
-const nav = document.querySelector('#nav');
-menuButton.addEventListener('click', () => {
-  const isOpen = nav.classList.toggle('open');
-  menuButton.setAttribute('aria-expanded', String(isOpen));
-  menuButton.setAttribute('aria-label', isOpen ? 'Menü schließen' : 'Menü öffnen');
-});
-nav.querySelectorAll('a').forEach(link => link.addEventListener('click', () => {
-  nav.classList.remove('open');
-  menuButton.setAttribute('aria-expanded', 'false');
-  menuButton.setAttribute('aria-label', 'Menü öffnen');
-}));
-document.querySelector('#year').textContent = new Date().getFullYear();
+const toggle=document.querySelector('.menu-toggle');const nav=document.querySelector('.navigation');toggle?.addEventListener('click',()=>{const open=nav.classList.toggle('open');toggle.setAttribute('aria-expanded',String(open));toggle.setAttribute('aria-label',open?'Menü schließen':'Menü öffnen')});document.querySelectorAll('.navigation a').forEach(a=>a.addEventListener('click',()=>{nav.classList.remove('open');toggle?.setAttribute('aria-expanded','false');toggle?.setAttribute('aria-label','Menü öffnen')}));document.querySelectorAll('.filter').forEach(btn=>btn.addEventListener('click',()=>{const filter=btn.dataset.filter;document.querySelectorAll('.filter').forEach(b=>{b.classList.toggle('active',b===btn);b.setAttribute('aria-pressed',String(b===btn))});document.querySelectorAll('.project-card').forEach(card=>{card.hidden=filter!=='all'&&card.dataset.category!==filter})}));document.querySelector('#year').textContent=new Date().getFullYear();document.querySelector('#copy-address')?.addEventListener('click',async e=>{const url='https://sids-design-racing.pages.dev';try{await navigator.clipboard.writeText(url);e.currentTarget.textContent='ADRESSE KOPIERT ✓'}catch{e.currentTarget.textContent=url}});
