@@ -30,22 +30,6 @@
 @media(max-width:570px){.container{width:calc(100% - 32px)}.hero-layout{padding-top:24px;padding-bottom:62px;gap:14px}.hero h1{font-size:clamp(58px,11.7vw,78px);line-height:.94}.hero-intro{font-size:16px;line-height:1.55}.hero-actions{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:18px}.hero-actions .btn{width:100%;min-height:54px;padding:10px 8px;font-size:11px;letter-spacing:.2px;text-align:center}.hero-car{margin:4px 0 0}.hero-car img{aspect-ratio:1.52;object-position:center;transform:scale(1.13)}.hero-car-caption{font-size:8px;letter-spacing:.7px;bottom:7px;left:7px;padding:6px}.hero-foot{font-size:8px;letter-spacing:1px;bottom:12px}.eyebrow{font-size:9px;letter-spacing:1.2px;gap:7px}}
 @media(max-width:360px){.hero-actions{grid-template-columns:1fr}.hero-actions .btn{font-size:12px}}
 /* V2.3 – BMW dominanter auf Mobilgeräten */
-@media (max-width: 580px) {
-  .hero-car {
-    margin-top: 8px;
-    aspect-ratio: 1.55;
-    overflow: hidden;
-  }
-
-  .hero-car img {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-    object-position: center;
-    transform: scale(1.12);
-  }
-
-  .hero-actions {
-    margin-bottom: 8px;
-  }
-}
+@media (max-width: 580px) {.hero-car {margin-top: 8px;aspect-ratio: 1.55;overflow: hidden;}
+.hero-car img {width:100%;height:100%;object-fit:contain;object-position:center;transform:scale(1.12);}
+.hero-actions {margin-bottom: 8px;}}
