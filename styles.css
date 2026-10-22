@@ -29,10 +29,75 @@
 @media(max-width:800px){.hero-layout{grid-template-columns:1fr;gap:15px;padding-top:26px;padding-bottom:72px}.hero-content{padding:0}.hero h1{font-size:clamp(60px,11.5vw,95px);margin:17px 0}.hero-intro{margin:0}.hero-actions{margin-top:20px}.hero-car{width:100%;max-width:none}.hero-car img{aspect-ratio:1.7;transform:scale(1.09)}.hero-foot{bottom:16px}}
 @media(max-width:570px){.container{width:calc(100% - 32px)}.hero-layout{padding-top:24px;padding-bottom:62px;gap:14px}.hero h1{font-size:clamp(58px,11.7vw,78px);line-height:.94}.hero-intro{font-size:16px;line-height:1.55}.hero-actions{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:18px}.hero-actions .btn{width:100%;min-height:54px;padding:10px 8px;font-size:11px;letter-spacing:.2px;text-align:center}.hero-car{margin:4px 0 0}.hero-car img{aspect-ratio:1.52;object-position:center;transform:scale(1.13)}.hero-car-caption{font-size:8px;letter-spacing:.7px;bottom:7px;left:7px;padding:6px}.hero-foot{font-size:8px;letter-spacing:1px;bottom:12px}.eyebrow{font-size:9px;letter-spacing:1.2px;gap:7px}}
 @media(max-width:360px){.hero-actions{grid-template-columns:1fr}.hero-actions .btn{font-size:12px}}
-
-/* V2.3 – BMW dominanter auf Mobilgeräten */
 @media(max-width:580px){.hero-car{margin-top:8px;aspect-ratio:1.55;overflow:hidden;}.hero-car img{width:100%;height:100%;object-fit:contain;object-position:center;transform:scale(1.12);}.hero-actions{margin-bottom:8px;}}
-
-/* V2.3 – BMW dominanter auf Mobilgeräten */
-
 @media(max-width:580px){.hero-car{margin-top:8px;aspect-ratio:1.55;overflow:hidden;}.hero-car img{width: 100%;height:100%;object-fit:contain;object-position:center;transform:scale(1.12);}.hero-actions{margin-bottom:8px;}}
+
+/* V2.5 – Mobile Optimierung Sids Design Garage */
+@media (max-width: 580px) {
+
+  /* Startseite: BMW vollständig sichtbar */
+  .hero-car {
+    margin-top: 0;
+    aspect-ratio: auto;
+    overflow: hidden;
+  }
+
+  .hero-car img {
+    display: block;
+    width: 100%;
+    height: auto;
+    aspect-ratio: auto;
+    object-fit: contain;
+    object-position: center;
+    transform: none;
+  }
+
+  /* Kompaktere Startseite */
+  .hero-layout {
+    gap: 10px;
+    padding-bottom: 65px;
+  }
+
+  .hero-actions {
+    margin-bottom: 0;
+  }
+
+  /* Galerie: Originalbilder ohne Beschnitt */
+  .project-media {
+    height: auto;
+    aspect-ratio: 16 / 9;
+    overflow: hidden;
+  }
+
+  .project-media > img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+    transform: none;
+  }
+
+  .project-card:hover .project-media > img {
+    transform: none;
+  }
+
+  /* Auch breite Projektkarten korrigieren */
+  .project-card-wide .project-media {
+    height: auto;
+    aspect-ratio: 16 / 9;
+  }
+
+  /* Kompaktere Projektbeschreibungen */
+  .project-info {
+    padding: 20px;
+  }
+
+  .project-info h3 {
+    margin: 12px 0;
+    font-size: 38px;
+  }
+
+  .project-grid {
+    gap: 16px;
+  }
+}
