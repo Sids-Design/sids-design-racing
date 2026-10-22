@@ -9,3 +9,28 @@
 @media(max-width:570px){.container{width:calc(100% - 32px)}.hero-layout{padding-top:24px;padding-bottom:52px;gap:10px}.hero h1{font-size:clamp(58px,11.7vw,78px);line-height:.94}.hero-intro{font-size:16px;line-height:1.55}.hero-actions{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:18px;margin-bottom:0}.hero-actions .btn{width:100%;min-height:54px;padding:10px 8px;font-size:11px;letter-spacing:.2px;text-align:center}.hero-car{margin:0;aspect-ratio:auto}.hero-car img{width:100%;height:auto;aspect-ratio:auto;object-fit:contain;transform:none}.hero-car-caption{font-size:8px;letter-spacing:.7px;bottom:7px;left:7px;padding:6px}.hero-foot{font-size:8px;letter-spacing:1px;bottom:10px;gap:20px}.hero-foot a{text-align:right}.eyebrow{font-size:9px;letter-spacing:1.2px;gap:7px}.rule{width:25px}h2{font-size:clamp(50px,12vw,74px)}.project-grid,.project-card-wide{grid-template-columns:1fr}.project-card-wide{grid-column:auto}.project-card-wide .project-media{min-height:0;aspect-ratio:16/9}.project-media{aspect-ratio:16/9}.project-media>img{object-fit:contain;transform:none!important}.project-info{padding:20px}.project-info h3{margin:12px 0;font-size:38px}.project-grid{gap:16px}.filter-bar{margin:25px 0 20px}.feature-visual img{min-height:0}.footer-inner{flex-direction:column;align-items:flex-start}}
 @media(max-width:360px){.hero-actions{grid-template-columns:1fr}.hero-actions .btn{font-size:12px}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{transition:none!important;animation:none!important}}
+
+/* V2.5 – Livery-Galerie und kompaktere Mobilansicht */
+#liveries.section{padding-top:clamp(52px,7vw,90px);padding-bottom:clamp(52px,7vw,90px)}
+.garage-gallery{border:1px solid #303236;background:#17191b;min-width:0;overflow:hidden}
+.gallery-head{padding:24px 28px 18px;display:flex;justify-content:space-between;align-items:end;gap:16px}
+.gallery-kicker{color:var(--orange);font-size:12px;font-weight:800;letter-spacing:2.4px}
+.gallery-head h3{font-size:clamp(32px,4vw,52px);margin:12px 0 0}
+.gallery-count{color:var(--orange);font:800 20px 'Barlow Condensed',sans-serif;white-space:nowrap;letter-spacing:2px}
+.gallery-stage{overflow:hidden;background:#090a0c;touch-action:pan-y pinch-zoom;outline-offset:-3px}
+.gallery-track{display:flex;transition:transform .35s ease;will-change:transform}
+.gallery-slide{flex:0 0 100%;min-width:0;margin:0;position:relative;background:#090a0c}
+.gallery-slide img{display:block;width:100%;height:auto;aspect-ratio:16/9;object-fit:contain;object-position:center}
+.gallery-slide figcaption{position:absolute;bottom:14px;left:14px;background:rgba(9,10,12,.9);color:var(--orange);padding:8px 12px;font-size:11px;font-weight:800;letter-spacing:1.5px}
+.gallery-bottom{padding:18px 28px 24px;display:flex;justify-content:space-between;align-items:center;gap:24px}
+.gallery-bottom p{color:var(--muted);margin:0;max-width:680px;font-size:16px}
+.gallery-swipe{display:block;font-size:12px;margin-top:6px}
+.gallery-controls{display:flex;gap:12px;align-items:center;flex-shrink:0}
+.gallery-arrow{border:1px solid #52545a;color:white;background:#111315;width:45px;height:45px;cursor:pointer;font-size:23px}
+.gallery-arrow:hover,.gallery-arrow:focus-visible{border-color:var(--orange);color:var(--orange)}
+.gallery-dots{display:flex;gap:8px;align-items:center}.gallery-dot{width:10px;height:10px;border:0;border-radius:50%;background:#666;cursor:pointer;padding:0}.gallery-dot.active{background:var(--orange);width:22px;border-radius:6px}
+.gallery-project-grid{margin-top:18px}.gallery-project-grid .project-card-wide{grid-column:1/-1}.gallery-project-grid .project-media{min-height:250px}
+.feature-label-below{position:static;display:inline-block;margin-top:0;max-width:100%;font-size:clamp(13px,2vw,19px)}
+@media(max-width:800px){.section{padding-top:60px;padding-bottom:60px}.gallery-bottom{flex-direction:column;align-items:stretch;gap:16px}.gallery-controls{justify-content:center}.gallery-project-grid .project-card-wide{grid-template-columns:1fr}.gallery-project-grid .project-media{min-height:0;aspect-ratio:16/9}}
+@media(max-width:570px){.gallery-head{padding:17px 16px 12px}.gallery-head h3{font-size:clamp(30px,9vw,42px)}.gallery-kicker{font-size:10px;letter-spacing:1.6px}.gallery-slide figcaption{bottom:8px;left:8px;font-size:9px;letter-spacing:.6px;padding:6px 8px}.gallery-bottom{padding:15px 16px 18px}.gallery-bottom p{font-size:14px;line-height:1.5}.gallery-arrow{width:48px;height:42px}.gallery-project-grid{margin-top:14px}.gallery-project-grid .project-info{padding:18px}.feature-label-below{padding:12px 16px;letter-spacing:1px}.split{gap:22px}}
+@media(prefers-reduced-motion:reduce){.gallery-track{transition:none}}
