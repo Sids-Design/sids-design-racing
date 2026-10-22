@@ -22,7 +22,7 @@
 .hero-actions{margin-top:25px;gap:10px}
 .hero-actions .btn{min-height:54px;padding:14px 18px}
 .hero-car{border:0;background:transparent;box-shadow:none;overflow:hidden}
-.hero-car img {width:100%;height:auto;aspect-ratio:auto;object-fit:contain;object-position:center;transform: none;}
+.hero-car img{width:100%;height:auto;aspect-ratio:auto;object-fit:contain;object-position:center;transform: none;}
 .hero-car:after{border-bottom-width:2px}
 .hero-car-caption{z-index:1}
 @media(max-width:1050px){.hero-layout{grid-template-columns:minmax(0,1fr) minmax(0,1.08fr)}.hero h1{font-size:clamp(53px,6.6vw,80px)}}
@@ -35,69 +35,24 @@
 /* V2.5 – Mobile Optimierung Sids Design Garage */
 @media (max-width: 580px) {
 
-  /* Startseite: BMW vollständig sichtbar */
-  .hero-car {
-    margin-top: 0;
-    aspect-ratio: auto;
-    overflow: hidden;
-  }
+/* Startseite: BMW vollständig sichtbar */
+.hero-car{margin-top: 0;aspect-ratio: auto;overflow: hidden;}
+.hero-car img{display:block;width:100%;height:auto;aspect-ratio:auto;bject-fit:contain;object-position:center;transform:none;}
 
-  .hero-car img {
-    display: block;
-    width: 100%;
-    height: auto;
-    aspect-ratio: auto;
-    object-fit: contain;
-    object-position: center;
-    transform: none;
-  }
+/* Kompaktere Startseite */
+.hero-layout{gap:10px;padding-bottom:65px;}
+.hero-actions{margin-bottom:0;}
 
-  /* Kompaktere Startseite */
-  .hero-layout {
-    gap: 10px;
-    padding-bottom: 65px;
-  }
+/* Galerie: Originalbilder ohne Beschnitt */
+.project-media{height:auto;aspect-ratio:16/9;overflow:hidden;}
+.project-media>img{width:100%;height:100%;object-fit:contain;object-position:center;transform:none;}
+.project-card:hover 
+.project-media>img{transform:none;}
 
-  .hero-actions {
-    margin-bottom: 0;
-  }
+/* Auch breite Projektkarten korrigieren */
+.project-card-wide.project-media{height:auto;aspect-ratio:16/9;}
 
-  /* Galerie: Originalbilder ohne Beschnitt */
-  .project-media {
-    height: auto;
-    aspect-ratio: 16 / 9;
-    overflow: hidden;
-  }
-
-  .project-media > img {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-    object-position: center;
-    transform: none;
-  }
-
-  .project-card:hover .project-media > img {
-    transform: none;
-  }
-
-  /* Auch breite Projektkarten korrigieren */
-  .project-card-wide .project-media {
-    height: auto;
-    aspect-ratio: 16 / 9;
-  }
-
-  /* Kompaktere Projektbeschreibungen */
-  .project-info {
-    padding: 20px;
-  }
-
-  .project-info h3 {
-    margin: 12px 0;
-    font-size: 38px;
-  }
-
-  .project-grid {
-    gap: 16px;
-  }
-}
+/* Kompaktere Projektbeschreibungen */
+.project-info{padding:20px;}
+.project-infoh3{margin:12px0;font-size:38px;}
+.project-grid {gap:16px;}}
