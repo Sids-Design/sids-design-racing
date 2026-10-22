@@ -22,7 +22,7 @@
 .hero-actions{margin-top:25px;gap:10px}
 .hero-actions .btn{min-height:54px;padding:14px 18px}
 .hero-car{border:0;background:transparent;box-shadow:none;overflow:hidden}
-.hero-car img{aspect-ratio:1.42;object-fit:cover;object-position:center 52%;transform:scale(1.08)}
+.hero-car img {width:100%;height:auto;aspect-ratio:auto;object-fit:contain;object-position:center;transform: none;}
 .hero-car:after{border-bottom-width:2px}
 .hero-car-caption{z-index:1}
 @media(max-width:1050px){.hero-layout{grid-template-columns:minmax(0,1fr) minmax(0,1.08fr)}.hero h1{font-size:clamp(53px,6.6vw,80px)}}
