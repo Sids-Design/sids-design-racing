@@ -58,3 +58,9 @@
 .team-logo-wordmark{font-family:'Barlow Condensed',sans-serif;font-weight:900;font-size:clamp(38px,6vw,70px);line-height:1;text-align:center;letter-spacing:.04em;color:#f6f6f6;overflow-wrap:anywhere}
 .team-logo-wordmark small{display:block;font-size:.44em;letter-spacing:.22em;color:#ff831f;margin-top:12px}
 @media(max-width:570px){.team-logo-wordmark{font-size:clamp(36px,10vw,56px)}}
+
+/* Rock Motorsport: seven separate vehicle selectors */
+.rock-vehicles[hidden]{display:none!important}
+.rock-vehicles{padding:4px 0 12px}
+.rock-vehicles .vehicle-select{padding-top:8px;padding-bottom:8px}
+.rock-vehicles .vehicle-panel{padding-bottom:14px}
