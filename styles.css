@@ -71,3 +71,17 @@
 .hero-brand-logo{display:block;width:min(100%,560px);height:auto;object-fit:contain;margin:0 0 12px;filter:drop-shadow(0 10px 28px rgba(0,0,0,.35))}
 @media(max-width:800px){.site-header .brand .brand-new-logo{width:190px;height:auto;max-height:66px}.hero-brand-logo{width:min(100%,490px)}}
 @media(max-width:570px){.site-header .brand .brand-new-logo{width:155px;height:auto;max-height:60px}.hero-brand-logo{width:100%;margin-bottom:14px}.footer-brand .brand-new-logo{width:180px}}
+
+/* Music / album pre-save */
+.music-section{background:radial-gradient(ellipse at 18% 40%,rgba(255,131,31,.12),transparent 52%),#101113}
+.music-layout{display:grid;grid-template-columns:minmax(0,.95fr) minmax(0,1.05fr);align-items:center;gap:clamp(28px,5vw,85px)}
+.music-art{aspect-ratio:1;min-width:0;display:flex;flex-direction:column;justify-content:space-between;padding:clamp(24px,4vw,45px);background:linear-gradient(145deg,rgba(255,131,31,.16),transparent 48%),repeating-linear-gradient(145deg,transparent 0 35px,rgba(255,131,31,.035) 36px 38px),#08090a;border:1px solid rgba(255,131,31,.4);box-shadow:18px 18px 0 rgba(255,131,31,.07)}
+.music-art-overline,.music-art-bottom{font:700 12px/1.4 Barlow,sans-serif;letter-spacing:2px;color:#c2c2c2}
+.music-art-title{font:900 clamp(43px,5.4vw,85px)/.94 'Barlow Condensed',Impact,sans-serif;letter-spacing:-1px;text-transform:uppercase}
+.music-art-title em{font-style:normal;color:var(--orange)}
+.music-content h2{margin:12px 0 22px}.music-content .lead{margin-bottom:12px}
+.music-tracks{display:grid;grid-template-columns:1fr 1fr;gap:9px 16px;margin:24px 0;color:#dedee0;font-size:13px;font-weight:600}
+.music-tracks span{border-bottom:1px solid #353535;padding:0 0 9px}
+.music-presave{margin-top:8px}.music-note{font-size:12px;color:var(--muted);margin-top:16px}
+@media(max-width:800px){.music-layout{grid-template-columns:1fr}.music-art{width:min(100%,530px);margin:auto}.music-content h2{font-size:clamp(56px,10vw,90px)}}
+@media(max-width:570px){.music-art-title{font-size:clamp(44px,12vw,72px)}.music-tracks{grid-template-columns:1fr}.music-presave{width:100%}}
