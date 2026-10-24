@@ -85,3 +85,7 @@
 .music-presave{margin-top:8px}.music-note{font-size:12px;color:var(--muted);margin-top:16px}
 @media(max-width:800px){.music-layout{grid-template-columns:1fr}.music-art{width:min(100%,530px);margin:auto}.music-content h2{font-size:clamp(56px,10vw,90px)}}
 @media(max-width:570px){.music-art-title{font-size:clamp(44px,12vw,72px)}.music-tracks{grid-template-columns:1fr}.music-presave{width:100%}}
+
+/* Original Sids Design Music artwork */
+.music-art.music-art-image{display:block;padding:0;overflow:hidden;aspect-ratio:1;background:#090a0c}
+.music-art-image img{display:block;width:100%;height:100%;object-fit:contain}
