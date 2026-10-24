@@ -110,3 +110,8 @@
 .hall-card .hall-medal{position:absolute;right:22px;top:18px;font-size:31px;line-height:1}.hall-card .achievement-no{font-size:11px;letter-spacing:2px;color:#a5a6a9}.hall-card h3{font-size:clamp(22px,2.2vw,30px);line-height:1.1;margin:24px 0 12px;max-width:95%}.hall-card .hall-rank{font:900 24px/1 'Barlow Condensed',Impact,sans-serif;color:#f6cf7a;letter-spacing:1px}.hall-silver .hall-rank{color:#d5dbe3}.hall-bronze .hall-rank{color:#dfa17f}.hall-card p{margin:14px 0 0;font-size:14px;color:#c8c9cb}.hall-footnote{font-size:12px;color:#999ba0;margin-top:20px}
 @media(max-width:900px){.achievements.hall-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:570px){.achievements.hall-grid{grid-template-columns:1fr}.hall-stats{gap:16px}.hall-stats div{min-width:130px}.hall-stats strong{font-size:42px}.achievements .hall-card{min-height:200px}}
+
+/* Fourth-place championship card */
+.achievements .hall-card.hall-fourth{border-top-color:#ff831f;background:linear-gradient(160deg,#211d19,#141518)}
+.hall-fourth .hall-medal{font:900 24px/1 Barlow Condensed,Impact,sans-serif;color:#ff831f}
+.hall-fourth .hall-rank{color:#ffac66}
