@@ -53,3 +53,8 @@
 .team-open[aria-expanded="true"] .team-open-label{background:#22160e}
 .vehicle-select[hidden],.vehicle-panel[hidden]{display:none!important}
 @media(max-width:570px){.team-logo-frame{height:200px;padding:24px}.team-open{margin-top:15px}}
+
+/* Team-Logos: neutrale Wortmarke, falls die Originaldatei noch fehlt */
+.team-logo-wordmark{font-family:'Barlow Condensed',sans-serif;font-weight:900;font-size:clamp(38px,6vw,70px);line-height:1;text-align:center;letter-spacing:.04em;color:#f6f6f6;overflow-wrap:anywhere}
+.team-logo-wordmark small{display:block;font-size:.44em;letter-spacing:.22em;color:#ff831f;margin-top:12px}
+@media(max-width:570px){.team-logo-wordmark{font-size:clamp(36px,10vw,56px)}}
