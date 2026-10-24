@@ -65,7 +65,7 @@ for (const gallery of document.querySelectorAll('[data-gallery]')) {
 // V3.0: Teams als auswählbare Fahrzeugkacheln
 document.querySelectorAll('.vehicle-button').forEach(button => {
   button.addEventListener('click', () => {
-    const panel = button.closest('.portfolio-item').querySelector('.vehicle-panel');
+    const panel = button.closest('.vehicle-select').nextElementSibling;
     const expanded = button.getAttribute('aria-expanded') === 'true';
     button.setAttribute('aria-expanded', String(!expanded));
     panel.hidden = expanded;
