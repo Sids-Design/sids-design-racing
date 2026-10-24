@@ -69,6 +69,11 @@ document.querySelectorAll('.vehicle-button').forEach(button => {
     const expanded = button.getAttribute('aria-expanded') === 'true';
     button.setAttribute('aria-expanded', String(!expanded));
     panel.hidden = expanded;
+    if (!expanded && button.closest('.rock-project')) {
+      button.closest('.rock-project').querySelectorAll('.vehicle-button').forEach(other => {
+        if (other !== button) { other.setAttribute('aria-expanded', 'false'); other.closest('.vehicle-select').nextElementSibling.hidden = true; }
+      });
+    }
   });
 });
 
@@ -76,15 +81,13 @@ document.querySelectorAll('.vehicle-button').forEach(button => {
 document.querySelectorAll('.team-open').forEach(button => {
   button.addEventListener('click', () => {
     const card = button.closest('.portfolio-item');
-    const selection = card.querySelector('.vehicle-select');
+    const selection = card.querySelector('.rock-vehicles') || card.querySelector('.vehicle-select');
     const expanded = button.getAttribute('aria-expanded') === 'true';
     button.setAttribute('aria-expanded', String(!expanded));
     selection.hidden = expanded;
     if (expanded) {
-      const vehicleButton = card.querySelector('.vehicle-button');
-      const panel = card.querySelector('.vehicle-panel');
-      vehicleButton.setAttribute('aria-expanded', 'false');
-      panel.hidden = true;
+      card.querySelectorAll('.vehicle-button').forEach(vehicleButton => vehicleButton.setAttribute('aria-expanded', 'false'));
+      card.querySelectorAll('.vehicle-panel').forEach(panel => { panel.hidden = true; });
     }
   });
 });
