@@ -69,7 +69,7 @@ document.querySelectorAll('.vehicle-button').forEach(button => {
     const expanded = button.getAttribute('aria-expanded') === 'true';
     button.setAttribute('aria-expanded', String(!expanded));
     panel.hidden = expanded;
-    if (!expanded && button.closest('.rock-project')) {
+    if (!expanded && button.closest('.rock-vehicles')) {
       button.closest('.rock-project').querySelectorAll('.vehicle-button').forEach(other => {
         if (other !== button) { other.setAttribute('aria-expanded', 'false'); other.closest('.vehicle-select').nextElementSibling.hidden = true; }
       });
