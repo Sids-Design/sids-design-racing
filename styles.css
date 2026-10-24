@@ -89,3 +89,13 @@
 /* Original Sids Design Music artwork */
 .music-art.music-art-image{display:block;padding:0;overflow:hidden;aspect-ratio:1;background:#090a0c}
 .music-art-image img{display:block;width:100%;height:100%;object-fit:contain}
+
+/* Music pre-save feature on homepage */
+.hero-music-promo{display:flex;align-items:center;gap:14px;width:min(100%,490px);margin-top:23px;padding:12px;border:1px solid rgba(255,131,31,.55);background:linear-gradient(105deg,rgba(255,131,31,.12),rgba(11,12,14,.94));box-shadow:0 10px 28px rgba(0,0,0,.15)}
+.hero-music-promo img{width:84px;height:84px;flex:0 0 84px;object-fit:cover}
+.hero-music-promo-copy{display:flex;flex-direction:column;align-items:flex-start;gap:2px;min-width:0}
+.hero-music-promo-copy span{font-size:10px;font-weight:800;letter-spacing:1px;color:#c5c5c8}
+.hero-music-promo-copy strong{font:900 clamp(19px,2vw,27px)/1 'Barlow Condensed',Impact,sans-serif;letter-spacing:.3px}
+.hero-music-promo-copy a{font-size:12px;font-weight:900;letter-spacing:.8px;color:var(--orange);text-decoration:underline;text-underline-offset:4px}
+.hero-music-promo-copy a:hover{color:#fff}
+@media(max-width:570px){.hero-music-promo{gap:10px;margin-top:17px;padding:9px}.hero-music-promo img{width:67px;height:67px;flex-basis:67px}.hero-music-promo-copy span{font-size:9px;letter-spacing:.3px}.hero-music-promo-copy strong{font-size:21px}.hero-music-promo-copy a{font-size:11px}}
