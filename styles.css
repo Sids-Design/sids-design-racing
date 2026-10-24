@@ -115,3 +115,8 @@
 .achievements .hall-card.hall-fourth{border-top-color:#ff831f;background:linear-gradient(160deg,#211d19,#141518)}
 .hall-fourth .hall-medal{font:900 24px/1 Barlow Condensed,Impact,sans-serif;color:#ff831f}
 .hall-fourth .hall-rank{color:#ffac66}
+
+/* Original championship logos in the Hall of Fame */
+.hall-card .hall-logo{display:block;align-self:flex-start;width:auto;max-width:min(100%,205px);height:82px;object-fit:contain;object-position:left center;margin:18px 0 15px}
+.hall-card:has(.hall-logo){min-height:300px}
+@media(max-width:600px){.hall-card .hall-logo{height:70px;max-width:185px}}
