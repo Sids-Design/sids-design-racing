@@ -120,3 +120,11 @@
 .hall-card .hall-logo{display:block;align-self:flex-start;width:auto;max-width:min(100%,205px);height:82px;object-fit:contain;object-position:left center;margin:18px 0 15px}
 .hall-card:has(.hall-logo){min-height:300px}
 @media(max-width:600px){.hall-card .hall-logo{height:70px;max-width:185px}}
+
+/* Social profiles in contact section */
+.contact-socials{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;margin-top:26px}
+.contact-socials a{display:flex;align-items:center;justify-content:space-between;gap:10px;padding:17px 18px;border:1px solid rgba(255,131,31,.36);background:rgba(255,131,31,.055);color:#f5f5f5;text-decoration:none;font:800 17px/1.2 "Barlow Condensed",Impact,sans-serif;letter-spacing:1.2px;transition:background .2s,border-color .2s,transform .2s}
+.contact-socials a span:last-child{color:#ff831f;font-size:22px}
+.contact-socials a:hover,.contact-socials a:focus-visible{background:rgba(255,131,31,.17);border-color:#ff831f;transform:translateY(-2px)}
+@media(max-width:760px){.contact-socials{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:390px){.contact-socials{grid-template-columns:1fr}}
