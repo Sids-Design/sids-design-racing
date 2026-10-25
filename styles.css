@@ -177,3 +177,10 @@
  .hero-content>.eyebrow{margin-bottom:24px}
  .hero-content>.art-heading-hero{width:112%;max-width:none;margin-top:0;margin-bottom:20px}
 }
+
+/* Desktop hero: prevent race lettering overlapping the BMW image. */
+@media(min-width:1051px){
+ .hero-layout{grid-template-columns:minmax(0,1.06fr) minmax(0,1.09fr);column-gap:52px;align-items:start}
+ .hero-content>.art-heading-hero{width:100%;max-width:100%;margin-top:0;margin-bottom:20px}
+ .hero-car{align-self:start;margin-top:170px}
+}
