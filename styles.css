@@ -134,9 +134,3 @@
 #liveries .signature-headline-top{display:inline-block;position:relative;font-family:"Barlow Condensed",Impact,sans-serif;font-weight:900;font-style:italic;letter-spacing:-.045em;line-height:1.08;transform:skewX(-7deg) rotate(-1deg);transform-origin:left center;color:#f4f2ef;background:repeating-linear-gradient(168deg,#ffffff 0px,#f5f3f0 4px,#c8c8c8 6px,#ffffff 9px,#888888 11px,#eeeeee 14px);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;filter:drop-shadow(2px 3px 0 #3b3b3b) drop-shadow(0 0 5px rgba(255,255,255,.12))}
 #liveries .signature-headline-impact{display:inline-block;position:relative;isolation:isolate;font-family:"Barlow Condensed",Impact,sans-serif;font-weight:900;font-style:italic;letter-spacing:-.045em;line-height:1.08;transform:skewX(-8deg) rotate(-1.5deg);transform-origin:left center;padding-right:.14em;color:#ff831f;background:repeating-linear-gradient(172deg,#ffac42 0px,#ff831f 3px,#f95b08 6px,#ff831f 9px,#a93408 10px,#ff8b24 13px);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;filter:drop-shadow(2px 3px 0 #5d210d) drop-shadow(0 0 8px rgba(255,96,8,.22))}
 @media(max-width:560px){#liveries .signature-headline{display:block}#liveries .signature-headline-impact{display:inline-block;max-width:100%}}
-
-/* Signature typography artwork – transparent SVGs, preserving the existing site and car photography. */
-h1.brush-heading,h2.brush-heading{display:block;max-width:min(100%,950px);margin:0 0 20px;padding:0;line-height:1}
-h1.brush-heading img,h2.brush-heading img{display:block;width:100%;height:auto;max-width:100%;object-fit:contain;object-position:left center}
-.hero h1.brush-heading{max-width:780px;margin:18px 0 20px}
-@media(max-width:760px){h1.brush-heading,h2.brush-heading{max-width:100%}.hero h1.brush-heading{max-width:100%}}
