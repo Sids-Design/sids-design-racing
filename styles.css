@@ -184,3 +184,6 @@
  .hero-content>.art-heading-hero{width:100%;max-width:100%;margin-top:0;margin-bottom:20px}
  .hero-car{align-self:start;margin-top:170px}
 }
+
+/* Align desktop BMW with the main race lettering, without touching mobile. */
+@media(min-width:1051px){.hero-car{margin-top:255px}}
