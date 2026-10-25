@@ -91,3 +91,25 @@ document.querySelectorAll('.team-open').forEach(button => {
     }
   });
 });
+
+
+// Direct project inquiries via Cloudflare Pages Function.
+const inquiryForm=document.querySelector('#project-inquiry');
+if(inquiryForm){
+ const status=document.querySelector('#inquiry-status');
+ inquiryForm.addEventListener('submit',async event=>{
+  event.preventDefault();
+  if(!inquiryForm.reportValidity())return;
+  const file=inquiryForm.elements.attachment.files[0];
+  if(file && file.size>2*1024*1024){status.textContent='Die Datei darf maximal 2 MB groß sein.';return;}
+  const button=inquiryForm.querySelector('[type="submit"]');
+  button.disabled=true;status.textContent='Anfrage wird gesendet …';
+  try{
+   const response=await fetch(inquiryForm.action,{method:'POST',body:new FormData(inquiryForm),headers:{Accept:'application/json'}});
+   const data=await response.json().catch(()=>({}));
+   if(!response.ok)throw new Error(data.error||'Der Versand ist momentan nicht möglich.');
+   inquiryForm.reset();status.textContent='Vielen Dank! Deine Anfrage wurde erfolgreich versendet.';
+  }catch(error){status.textContent=error.message||'Der Versand ist fehlgeschlagen. Bitte versuche es erneut oder schreibe eine E-Mail.';}
+  finally{button.disabled=false;}
+ });
+}
