@@ -169,3 +169,11 @@
  .about-grid{gap:50px;grid-template-columns:1.08fr 1fr;align-items:center}
  .about-grid .art-heading{width:min(100%,690px)}
 }
+
+/* Desktop: give hero branding breathing room and make the race headline prominent. */
+@media(min-width:1051px){
+ .hero-layout{grid-template-columns:minmax(0,1.06fr) minmax(0,1.09fr);gap:38px}
+ .hero-brand-logo{margin-bottom:34px}
+ .hero-content>.eyebrow{margin-bottom:24px}
+ .hero-content>.art-heading-hero{width:112%;max-width:none;margin-top:0;margin-bottom:20px}
+}
