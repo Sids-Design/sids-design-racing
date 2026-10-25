@@ -128,3 +128,9 @@
 .contact-socials a:hover,.contact-socials a:focus-visible{background:rgba(255,131,31,.17);border-color:#ff831f;transform:translateY(-2px)}
 @media(max-width:760px){.contact-socials{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:390px){.contact-socials{grid-template-columns:1fr}}
+
+/* Signature headline: lettering only; no background or vehicle changes. */
+#liveries .signature-headline{display:flex;flex-wrap:wrap;align-items:baseline;column-gap:.25em;row-gap:0;overflow:visible}
+#liveries .signature-headline-top{display:inline-block;color:#f4f2ef;font-weight:900;letter-spacing:-.035em;text-shadow:1px 2px 0 rgba(255,255,255,.15)}
+#liveries .signature-headline-impact{display:inline-block;position:relative;isolation:isolate;font-family:"Barlow Condensed",Impact,sans-serif;font-weight:900;font-style:italic;letter-spacing:-.045em;line-height:1.08;transform:skewX(-8deg) rotate(-1.5deg);transform-origin:left center;padding-right:.14em;color:#ff831f;background:repeating-linear-gradient(172deg,#ffac42 0px,#ff831f 3px,#f95b08 6px,#ff831f 9px,#a93408 10px,#ff8b24 13px);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;filter:drop-shadow(2px 3px 0 #5d210d) drop-shadow(0 0 8px rgba(255,96,8,.22))}
+@media(max-width:560px){#liveries .signature-headline{display:block}#liveries .signature-headline-impact{display:inline-block;max-width:100%}}
