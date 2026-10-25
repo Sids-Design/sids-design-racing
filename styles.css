@@ -158,3 +158,14 @@
 .hero .art-heading-hero{width:min(100%,760px);margin-bottom:24px}
 #kontakt .art-heading{width:min(100%,780px)}
 @media(max-width:760px){.art-heading,.hero .art-heading-hero,#kontakt .art-heading{width:100%;max-width:100%}}
+
+/* Desktop-only polish; preserve the already-approved mobile layout. */
+@media(min-width:1051px){
+ .hero-layout{grid-template-columns:minmax(0,.95fr) minmax(0,1.2fr);gap:48px;padding-top:52px;padding-bottom:80px}
+ .hero-content>.art-heading-hero{width:min(100%,680px);margin-top:8px;margin-bottom:14px}
+ .hero-intro{line-height:1.55;margin-top:10px;margin-bottom:18px}
+ .hero-actions{margin-top:22px}
+ .split{gap:48px}
+ .about-grid{gap:50px;grid-template-columns:1.08fr 1fr;align-items:center}
+ .about-grid .art-heading{width:min(100%,690px)}
+}
