@@ -190,3 +190,30 @@
 
 /* Final fine adjustment: BMW 28px lower on desktop only. */
 @media(min-width:1051px){.hero-car{margin-top:283px}}
+
+/* Individual signature livery project pages */
+.signature-detail-link{display:inline-flex;align-items:center;gap:12px;margin:20px 0;padding:12px 18px;border:1px solid var(--orange);color:var(--orange);font-weight:800;letter-spacing:1px;font-size:13px;transition:background .2s,color .2s}
+.signature-detail-link:hover{background:var(--orange);color:#090a0c}
+.detail-header{background:#0a0b0d;border-bottom:1px solid #303238;position:sticky;top:0;z-index:10}
+.detail-nav{min-height:88px;display:flex;justify-content:space-between;align-items:center;gap:20px}
+.detail-nav img{width:220px;max-height:70px;object-fit:contain;object-position:left center}
+.detail-back{font-size:13px;font-weight:800;letter-spacing:1.3px;color:var(--orange)}.detail-back:hover{color:white}
+.detail-main{background:radial-gradient(ellipse at 70% 8%,rgba(255,131,31,.1),transparent 38%),#090a0c;padding:72px 0 90px}
+.detail-title-row{display:flex;align-items:end;justify-content:space-between;gap:24px;margin:20px 0 32px}
+.detail-overline,.detail-intro span,.detail-next span{font-size:12px;font-weight:800;letter-spacing:2px;color:var(--orange)}
+.detail-title-row h1{font-size:clamp(60px,8vw,120px);line-height:.88;margin:15px 0 22px;max-width:950px}
+.detail-subtitle{font-size:15px;color:#b7b7bc;letter-spacing:1.2px;font-weight:700}
+.detail-counter{font:800 24px 'Barlow Condensed',sans-serif;color:var(--orange);white-space:nowrap}
+.detail-cover{background:#101113;border:1px solid #303238;overflow:hidden}
+.detail-cover img{width:100%;height:auto;aspect-ratio:16/9;object-fit:contain}
+.detail-intro{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center;padding:70px 0}
+.detail-intro h2,.detail-next h2{font-size:clamp(42px,5vw,74px);margin-top:12px}
+.detail-intro p{color:#c1c1c5;font-size:19px;line-height:1.65}
+.detail-gallery{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px}
+.detail-shot{margin:0;border:1px solid #303238;background:#151719;overflow:hidden}
+.detail-shot img{width:100%;aspect-ratio:16/9;object-fit:contain}
+.detail-shot figcaption{border-top:1px solid #303238;padding:12px 16px;color:var(--orange);font-size:11px;letter-spacing:1.5px;font-weight:800}
+.detail-next{margin-top:80px;padding:35px 0;border-top:1px solid #383a3f;border-bottom:1px solid #383a3f;display:flex;align-items:center;justify-content:space-between;gap:25px}
+.detail-bottom-link{display:inline-block;margin-top:32px}.detail-footer{display:flex;justify-content:space-between;gap:20px;font-size:13px;color:#a1a2a6;letter-spacing:1px}
+@media(max-width:800px){.detail-main{padding:48px 0 60px}.detail-nav{min-height:75px}.detail-nav img{width:155px}.detail-back{font-size:11px}.detail-title-row h1{font-size:clamp(52px,12vw,86px)}.detail-intro{grid-template-columns:1fr;gap:10px;padding:42px 0}.detail-gallery{gap:14px}.detail-next{margin-top:50px}}
+@media(max-width:570px){.detail-title-row{align-items:start}.detail-counter{display:none}.detail-gallery{grid-template-columns:1fr}.detail-next{flex-direction:column;align-items:start}.detail-footer{flex-direction:column}.detail-shot figcaption{font-size:10px}}
