@@ -187,3 +187,6 @@
 
 /* Align desktop BMW with the main race lettering, without touching mobile. */
 @media(min-width:1051px){.hero-car{margin-top:255px}}
+
+/* Final fine adjustment: BMW 28px lower on desktop only. */
+@media(min-width:1051px){.hero-car{margin-top:283px}}
