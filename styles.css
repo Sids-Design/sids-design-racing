@@ -147,3 +147,7 @@
 #liveries .standout-graphic-heading{margin:0;max-width:100%;width:min(100%,940px);line-height:0;overflow:visible}
 #liveries .standout-graphic-heading img{display:block;width:100%;height:auto;object-fit:contain}
 @media(max-width:760px){#liveries .standout-graphic-heading{width:100%}}
+
+/* Slightly reduce approved headline graphic without changing artwork. */
+#liveries .standout-graphic-heading{width:min(92%,860px)}
+@media(max-width:760px){#liveries .standout-graphic-heading{width:94%}}
