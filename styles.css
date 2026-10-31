@@ -255,3 +255,14 @@
 #about .about-grid p.lead{line-height:1.5;margin-bottom:23px}
 #about .about-grid .text-link{margin-top:15px}
 @media(max-width:800px){#about .about-grid{grid-template-columns:1fr;gap:28px}#about .about-grid h3{margin-top:28px}}
+
+/* About Me: same full-width editorial rhythm as Racing */
+#about .about-grid{display:block;max-width:1100px;margin-inline:auto}
+#about .about-grid>div:first-child{margin-bottom:25px}
+#about .about-grid .clean-type-heading{margin-bottom:20px}
+#about .about-grid .about-identity{font-size:clamp(18px,2vw,23px);line-height:1.5;color:#f3f3f4;font-weight:600;margin:0 0 24px}
+#about .about-grid>div:last-child{max-width:none}
+#about .about-grid p{font-size:clamp(15px,1.35vw,18px);line-height:1.7;margin-bottom:18px}
+#about .about-grid p.lead{font-size:clamp(19px,2vw,24px)!important;line-height:1.5;color:#fff}
+#about .about-grid h3{font-size:clamp(21px,2.3vw,29px);margin:38px 0 16px}
+@media(max-width:800px){#about .about-grid{max-width:100%}#about .about-grid>div:first-child{margin-bottom:18px}#about .about-grid h3{margin-top:30px}}
