@@ -244,3 +244,14 @@
 #racing .racing-driver-visual img{display:block;width:100%;height:auto;object-fit:contain}
 #racing .racing-driver-visual figcaption{padding:13px 18px;color:#b8b8bc;font-size:clamp(10px,1.1vw,13px);font-weight:700;letter-spacing:.12em;text-align:center}
 @media(max-width:600px){#racing .racing-driver-section{gap:22px}#racing .racing-driver-visual{border-radius:7px}#racing .racing-driver-visual figcaption{padding:12px 10px;letter-spacing:.045em}}
+
+/* About story: top-aligned editorial layout and distinct chapter headings */
+#about .about-grid{align-items:start}
+#about .about-grid>div{min-width:0}
+#about .about-grid>div:first-child{align-self:start}
+#about .about-grid h3{color:var(--orange,#ff831f);font-size:clamp(19px,2vw,25px);line-height:1.2;letter-spacing:.035em;margin:34px 0 14px}
+#about .about-grid h3:first-of-type{margin-top:30px}
+#about .about-grid p{line-height:1.75;margin:0 0 19px}
+#about .about-grid p.lead{line-height:1.5;margin-bottom:23px}
+#about .about-grid .text-link{margin-top:15px}
+@media(max-width:800px){#about .about-grid{grid-template-columns:1fr;gap:28px}#about .about-grid h3{margin-top:28px}}
