@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-labelledby="title">
+  <title id="title">Sids Design Garage</title>
+  <defs>
+    <linearGradient id="metal" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#fff"/>
+      <stop offset=".48" stop-color="#bfc2c6"/>
+      <stop offset="1" stop-color="#ff831f"/>
+    </linearGradient>
+  </defs>
+  <rect x="2" y="2" width="60" height="60" rx="13" fill="#0a0b0d" stroke="#ff831f" stroke-width="2"/>
+  <path d="M9 12h15M40 52h15M8 17h9M47 47h9" fill="none" stroke="#ff831f" stroke-linecap="round" stroke-width="2"/>
+  <path d="M12 25l4-5h32l4 5v17l-4 5H16l-4-5z" fill="#111316" stroke="#414348" stroke-width="1.5"/>
+  <text x="32" y="40" text-anchor="middle" fill="url(#metal)" font-family="Arial Black,Arial,sans-serif" font-size="22" font-style="italic" font-weight="900" letter-spacing="-1.6">SDG</text>
+  <path d="M18 50h28" stroke="#ff831f" stroke-linecap="round" stroke-width="2"/>
+</svg>
