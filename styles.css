@@ -290,7 +290,7 @@
 @media(max-width:850px){.livery-services{grid-template-columns:1fr;gap:12px}.livery-cta{align-items:stretch;flex-direction:column}.livery-cta>a{align-self:flex-start}}
 
 /* Shadow Beast – original Mustang GT3 customer project preview */
-.shadow-beast-project .shadow-beast-preview{display:block;width:100%;background:#090a0c;border-top:1px solid rgba(255,131,31,.28);overflow:hidden}
+.shadow-beast-project .shadow-beast-preview{display:block;width:100%;background:radial-gradient(ellipse at center,#361016 0%,#0b0b0e 72%);border-top:1px solid rgba(255,131,31,.28);overflow:hidden}
 .shadow-beast-project .shadow-beast-preview img{display:block;width:100%;height:auto;aspect-ratio:2048/857;object-fit:contain;transition:transform .25s ease}
 .shadow-beast-project .shadow-beast-preview:hover img{transform:scale(1.015)}
 .shadow-beast-project .portfolio-description{padding:18px 22px 22px;line-height:1.6}
