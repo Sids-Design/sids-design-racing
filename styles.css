@@ -296,3 +296,9 @@
 .shadow-beast-project .portfolio-description{padding:18px 22px 22px;line-height:1.6}
 @media(max-width:570px){.shadow-beast-project .portfolio-description{padding:16px 16px 20px}}
 @media(prefers-reduced-motion:reduce){.shadow-beast-project .shadow-beast-preview img{transition:none}}
+
+/* Shadow Beast feature: preserve the full cinematic vertical poster on all screens. */
+.shadow-beast-tagline{margin:4px 0 15px;color:var(--orange,#ff831f);font-family:'Barlow Condensed',Impact,sans-serif;font-weight:800;font-size:clamp(20px,2.4vw,30px);letter-spacing:.045em;line-height:1.15}
+.detail-cover.shadow-beast-cover{display:flex;justify-content:center;align-items:center;padding:clamp(12px,2.5vw,28px);background:radial-gradient(ellipse at 50% 35%,#271013,#08090c 68%);border-color:rgba(201,32,29,.5)}
+.detail-cover.shadow-beast-cover img{display:block;width:min(100%,730px);max-height:none;height:auto;aspect-ratio:auto;object-fit:contain}
+@media(max-width:600px){.detail-cover.shadow-beast-cover{padding:8px}.detail-cover.shadow-beast-cover img{width:100%;height:auto}.shadow-beast-tagline{letter-spacing:.025em}}
